@@ -31,6 +31,11 @@ Os resultados obtidos permitiram identificar:
 - relação entre distância percorrida e valor da corrida;
 - potencial do dataset para aplicações em previsão e segmentação.
 
+## Considerações Finais
+O projeto evidencia que a combinação entre limpeza de dados, análise exploratória e modelagem introdutória pode gerar conhecimento relevante sobre o comportamento das corridas. Dessa forma, o estudo contribui tanto para a interpretação dos dados quanto para a demonstração de possibilidades práticas de aplicação em ciência de dados.
+
+## Autora: Evelyn Klein dos Santos
+
 ## Arquivo Principal
 
 O desenvolvimento do estudo está concentrado no notebook:
@@ -44,7 +49,4 @@ O notebook pode ser executado em Google Colab ou Jupyter Notebook, desde que as 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 
-## Considerações Finais
-O projeto evidencia que a combinação entre limpeza de dados, análise exploratória e modelagem introdutória pode gerar conhecimento relevante sobre o comportamento das corridas. Dessa forma, o estudo contribui tanto para a interpretação dos dados quanto para a demonstração de possibilidades práticas de aplicação em ciência de dados.
 
-## Autora: Evelyn Klein dos Santos
