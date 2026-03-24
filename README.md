@@ -1,47 +1,50 @@
-# Projeto Uber EDA
+# Análise Exploratória e Aplicações em Inteligência Artificial com o Dataset NCR Ride Bookings
 
-Este repositorio ficou organizado com apenas a estrutura final do projeto:
+Este projeto apresenta um estudo desenvolvido a partir do dataset `ncr_ride_bookings.csv`, com foco em análise exploratória de dados, preparação da base e demonstração de aplicações introdutórias em inteligência artificial.
 
-- `notebooks/uber_eda_ml_atualizado.ipynb`: notebook principal pronto para exploracao, regressao, classificacao e clusterizacao.
-- `dados/ncr_ride_bookings.csv`: dataset usado no projeto.
-- `src/uber_ml/`: modulos Python com limpeza, features e treino dos modelos.
-- `requirements.txt`: dependencias do projeto.
+O trabalho foi estruturado em notebook e contempla desde a compreensão inicial do conjunto de dados até a extração de insights e a realização de experimentos com modelos supervisionados e não supervisionados.
 
-## Estrutura
+## Objetivo
 
-```text
-uber_eda/
-|-- dados/
-|   |-- ncr_ride_bookings.csv
-|-- notebooks/
-|   |-- uber_eda_ml_atualizado.ipynb
-|-- src/
-|   |-- uber_ml/
-|       |-- __init__.py
-|       |-- config.py
-|       |-- data.py
-|       |-- features.py
-|       |-- train_supervised.py
-|       |-- train_classification.py
-|       |-- train_unsupervised.py
-|-- requirements.txt
-|-- README.md
-```
+O estudo tem como objetivo compreender o comportamento das corridas registradas no dataset, identificando padrões operacionais, temporais e financeiros. Como etapa complementar, também busca demonstrar o potencial da base para tarefas de classificação e segmentação.
 
-## O que o projeto faz
+## Desenvolvimento
 
-- EDA com graficos e analise descritiva.
-- Regressao para prever `Booking Value`.
-- Classificacao para prever `Booking Status`.
-- Clusterizacao com KMeans e DBSCAN.
+Ao longo do notebook, foram realizadas as seguintes etapas:
 
-## Como rodar
+- entendimento inicial da estrutura do dataset;
+- tratamento de valores ausentes, duplicatas e inconsistências;
+- correção de tipos de dados e tratamento de outliers;
+- criação de novas variáveis para apoio à análise;
+- análise exploratória com apoio de gráficos e estatísticas descritivas;
+- síntese dos principais insights encontrados;
+- aplicação complementar de modelos supervisionados e não supervisionados.
+
+## Principais Resultados
+
+Os resultados obtidos permitiram identificar:
+
+- predominância de corridas concluídas;
+- concentração da demanda em horários específicos do dia;
+- maior volume de corridas em dias úteis;
+- padrões relacionados a cancelamentos, corridas incompletas e seus motivos;
+- relação entre distância percorrida e valor da corrida;
+- potencial do dataset para aplicações em previsão e segmentação.
+
+## Arquivo Principal
+
+O desenvolvimento do estudo está concentrado no notebook:
+
+- `uber_eda_evelyn.ipynb`
+
+## Execução
+
+O notebook pode ser executado em Google Colab ou Jupyter Notebook, desde que as bibliotecas necessárias estejam instaladas:
 
 ```bash
-pip install -r requirements.txt
-python -m src.uber_ml.train_supervised
-python -m src.uber_ml.train_classification
-python -m src.uber_ml.train_unsupervised
-```
+pip install pandas numpy matplotlib seaborn scikit-learn
 
-O notebook tambem tenta localizar o CSV automaticamente no Kaggle ou em `dados/ncr_ride_bookings.csv`.
+## Considerações Finais
+O projeto evidencia que a combinação entre limpeza de dados, análise exploratória e modelagem introdutória pode gerar conhecimento relevante sobre o comportamento das corridas. Dessa forma, o estudo contribui tanto para a interpretação dos dados quanto para a demonstração de possibilidades práticas de aplicação em ciência de dados.
+
+## Autora: Evelyn Klein dos Santos
